@@ -1,9 +1,13 @@
 def factorial(n):
-  a = n
-  while a>1:
-    n = n*(n-1)
-    a -= 1
-  factorial_of_n = n
-  print(factorial_of_n)
+  if n == 1:
+    return 1
+  return(n*factorial(n-1))
 
-factorial(5)
+
+def main():
+  n = int(input("Enter a number: "))
+  factorial_of_n = factorial(n)
+  print("The factorial is " + str(factorial_of_n)
+
+if __name__ == "__name__":
+  main()
